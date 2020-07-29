@@ -1,0 +1,22 @@
+.resume {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+#resumeFrame {
+  height: 100%;
+  margin: 0px;
+  min-height: 600px;
+  max-width: 900px;
+  position: absolute;
+  top: 150px;
+  width: 90%;
+  zoom: 100%;
+}
+
+.resume a {
+  color: #68b0ff;
+}

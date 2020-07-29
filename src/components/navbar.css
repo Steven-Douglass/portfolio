@@ -1,0 +1,42 @@
+.nav {
+  align-items: center;
+  background-color: #343745;
+  border-bottom: 1px solid #75798c;
+  color: #f2f4fc;
+  display: flex;
+  font-size: 18px;
+  height: 80px;
+  justify-content: space-around;
+  margin: 0px;
+  width: 100%;
+}
+
+a {
+  border-bottom: 2px solid transparent;
+  color: #f2f4fc;
+  text-decoration: none;
+}
+
+.selected {
+  border-bottom: 2px solid #68b0ff;
+  color: #68b0ff;
+}
+
+.icon {
+  height: 40px;
+}
+
+a:hover,
+img:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 80px;
+    justify-items: center;
+    padding-top: 10px;
+  }
+}
