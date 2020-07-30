@@ -22,9 +22,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: grid;
-  grid-template-rows: 30% 70%;
-  height: 325px;
-  padding: 5px;
+  grid-template-rows: 65px auto;
+  /* height: 325px; */
+  padding: 0px 5px 25px 5px;
   margin: 5px;
 }
 
@@ -88,17 +88,27 @@ html {
 
 #knowledge {
   display: grid;
-  grid-row-gap: 5px;
+  justify-items: space-around;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   padding-top: 5px;
+  row-gap: 5px;
 }
 
 #knowledge > div {
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 40px;
   justify-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#knowledge p {
+  line-height: 15px;
+  margin: 0px;
+  padding: 0px;
 }
 
 p {
@@ -142,13 +152,15 @@ p {
 
 .card svg {
   fill: #68b0ff;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
 }
 
 svg {
   fill: #f2f4fc;
   height: 150px;
+  margin: 0px;
+  padding: 0px;
   width: 150px;
 }
 
@@ -177,9 +189,9 @@ svg {
 /* Media Queries */
 /* Media Queries */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px) {
   .card {
-    height: 325px;
+    width: 100%;
   }
 
   .card svg {
@@ -197,16 +209,15 @@ svg {
   }
 
   #tiles {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 600px) {
-  .card {
-    height: 300px;
-  }
-
+@media only screen and (min-width: 551px) and (max-width: 600px) {
   h1 {
     font-size: 40px;
   }
@@ -216,28 +227,22 @@ svg {
   }
 
   #tiles {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 800px) {
-  h1 {
-    font-size: 50px;
-  }
-
-  .card {
-    height: 325px;
-  }
-
-  #tiles {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .card {
+    height: 235px;
+  }
+
   #tiles {
-    width: 75%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
